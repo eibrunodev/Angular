@@ -161,10 +161,20 @@
 
 </section> -->
 
-<section>
+<!-- <section>
   <article>
     <h3>Input Properties</h3>
     <app-curso [nomeDoCurso]="nomeDoCurso"></app-curso>
     <app-curso [tipo]="tipoDoCurso"></app-curso>
+  </article>
+</section> -->
+
+<section>
+  <article>
+    <h3>Output Properties</h3>
+    <contador
+     [valor]="valorInicial"
+     (mudouValor) = "onMudouValor($event)"
+    ></contador>
   </article>
 </section>

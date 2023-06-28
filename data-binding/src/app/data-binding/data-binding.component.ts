@@ -69,4 +69,9 @@ export class DataBindingComponent {
     nome:"Seu Nome",
     idade:20
   }
+
+  valorInicial:number = 15;
+  onMudouValor(event:any){
+    alert(`Seu valor agora é:${event.novoValor}` )
+  }
 }
